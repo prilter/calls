@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calls</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📞 Calls</h2>
+    <input type="tel" id="phone_input" placeholder="Enter phone number" value="+7">
+    <button class="call-btn" onclick="call()">Позвонить</button>
+
+    <h2>📷 Camera</h2>
+    <video type="module" id="local_video" autoplay muted></video>
+    <video type="module" id="remote_video" autoplay></video>
+    <button class="camera-btn" onclick="start_camera()">Turn on camera</button>
+    <button class="stop-btn" onclick="stop_camera()">Turn off camera</button>
+  </div>
+
+  <script type="module" src="/static/js/script.js"></script>
+</body>
+</html>
+
